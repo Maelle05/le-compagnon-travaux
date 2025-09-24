@@ -162,17 +162,24 @@ h2 {
   max-width: max-content;
   text-transform: uppercase;
   margin-top: 20px;
+  transition: color 1s ease-in-out;
 }
 
-.button-2 {
-  font-size: smaller;
-  color: #ffffff;
-  background-color: #01334d;
-  padding: 10px 20px;
-  border-radius: 100px;
-  text-decoration: none;
-  display: block;
-  max-width: max-content;
-  text-transform: uppercase;
-  margin-top: 20px;
+.button:hover {
+  background-color: #a46b08;
+}
+
+/* Annimation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee {
+  display: flex;
+  width: 200%; /* double de la largeur pour boucle continue */
+  animation: marquee 15s linear infinite;
 }
