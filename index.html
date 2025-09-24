@@ -9,95 +9,167 @@
     <!-- Script Embla -->
     <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
     <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
+    <!-- Script Tailwindcss -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <div class="header color-white bg-dark-blue">
-      <div>
-        <img src="/assets/img/logo-2.png" />
+    <div
+      class="header color-white bg-dark-blue p-4 flex flex-row justify-between items-center"
+    >
+      <div class="flex flex-row gap-3 items-center">
+        <img src="/assets/logo-1.png" class="w-11" />
         <h1 class="poppins-medium">Le compagnon travaux</h1>
       </div>
-      <div>
-        <a class="poppins-regular color-white" href="#">Services</a>
-        <a class="poppins-regular color-white" href="#">Tarif</a>
-        <a class="poppins-regular color-white" href="#">Contact</a>
+      <div class="flex flex-row items-center gap-5 pr-8 hidden md:flex">
+        <a
+          class="poppins-regular color-white relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+          href="#services"
+          >Services</a
+        >
+        <a
+          class="poppins-regular color-white relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+          href="#tarif"
+          >Tarif</a
+        >
+        <a
+          class="poppins-regular color-white relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+          href="#contact"
+          >Contact</a
+        >
       </div>
     </div>
-    <div class="slider embla">
+    <section class="slider embla">
       <div class="embla__container">
         <div class="embla__slide">
-          <img src="/assets/img/img-3.jpeg" />
-          <div>
+          <img src="/assets/img/img1.jpeg" />
+          <div
+            class="absolute top-0 left-0 h-full p-8 flex items-center md:pl-30"
+          >
             <div class="color-white">
-              <h2 class="poppins-medium">
-                Un compagnon de confiance pour vos travaux
+              <h2 class="slider poppins-medium mb-3">
+                Un compagnon <br class="block" />
+                de confiance pour vos travaux
               </h2>
               <p class="poppins-regular">
-                Conseil, accompagnement et défense de vos intérêts avant,
-                pendant et après vos travaux
+                Conseil, Accompagnement et Défense de vos intérêts.
+                <br class="hidden md:block" />
+                Avant, pendant et après vos travaux.
               </p>
-              <a class="poppins-regular" href="#"
-                >Prendre rendez-vous c’est gratuit</a
-              >
+              <a class="poppins-medium button" href="#">Prendre rendez-vous</a>
             </div>
           </div>
         </div>
         <div class="embla__slide">
-          <img src="/assets/img/img-11.jpeg" />
-          <div>
+          <img src="/assets/img/img2.jpeg" />
+          <div
+            class="absolute top-0 left-0 h-full p-8 flex items-center md:pl-30"
+          >
             <div class="color-white">
-              <h2 class="poppins-medium">
-                Un compagnon de confiance pour vos travaux
+              <h2 class="slider poppins-medium mb-3">
+                Les secrets <br class="block md:hidden" />
+                et ficelles
               </h2>
               <p class="poppins-regular">
-                Conseil, accompagnement et défense de vos intérêts avant,
-                pendant et après vos travaux
+                Pour se lancer lancer sereinement, réussir ses travaux,
+                <br class="hidden md:block" />
+                éviter les déceptions, malfaçons et arnaques.
               </p>
-              <a class="poppins-regular" href="#"
-                >Prendre rendez-vous c’est gratuit</a
-              >
+              <a class="poppins-medium button" href="#">Prendre rendez-vous</a>
             </div>
           </div>
         </div>
         <div class="embla__slide">
-          <img src="/assets/img/img-2.jpeg" />
-          <div>
+          <img src="/assets/img/img3.jpeg" />
+          <div
+            class="absolute top-0 left-0 h-full p-8 flex items-center md:pl-30"
+          >
             <div class="color-white">
-              <h2 class="poppins-medium">
-                Un compagnon de confiance pour vos travaux
+              <h2 class="slider poppins-medium mb-3">
+                Votre allié pour des projets réussis
               </h2>
               <p class="poppins-regular">
-                Conseil, accompagnement et défense de vos intérêts avant,
-                pendant et après vos travaux
+                Travaux sécurisés, esprit libérés.
+                <br class="hidden md:block" />
+                Avec Le compagnon travaux, anticipez, construisez, respirez.
               </p>
-              <a class="poppins-regular" href="#"
-                >Prendre rendez-vous c’est gratuit</a
-              >
+              <a class="poppins-medium button" href="#">Prendre rendez-vous</a>
             </div>
           </div>
         </div>
         <div class="embla__slide">
-          <img src="/assets/img/img-10.jpeg" />
-          <div>
+          <img src="/assets/img/img4.jpeg" />
+          <div
+            class="absolute top-0 left-0 h-full p-8 flex items-center md:pl-30"
+          >
             <div class="color-white">
-              <h2 class="poppins-medium">
-                Un compagnon de confiance pour vos travaux
+              <h2 class="slider poppins-medium mb-3">
+                Des travaux bien pensés, <br class="hidden md:block" />
+                bien suivis, bien réalisés
               </h2>
               <p class="poppins-regular">
-                Conseil, accompagnement et défense de vos intérêts avant,
-                pendant et après vos travaux
+                Accompagnement complet : conseils adaptés, artisans
+                sélectionnés, suivi rigoureux du chantier. <br />
+                Un seul objectif : des projets réussis, sans stress ni mauvaises
+                surprises.
               </p>
-              <a class="poppins-regular" href="#"
-                >Prendre rendez-vous c’est gratuit</a
-              >
+              <a class="poppins-medium button" href="#">Prendre rendez-vous</a>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <div class="embla__controls">
+        <div class="embla__dots"></div>
+      </div>
+    </section>
 
-    <div class="content">
-      <h3 class="poppins-medium">Présentation</h3>
-    </div>
+    <section class="p-10 pt-20 md:p-20 overflow-hidden">
+      <h2 class="poppins-medium">Présentation</h2>
+      <hr class="w-24 h-[4px] bg-orange border-none mt-3" />
+      <div class="mt-10 flex flex-col md:flex-row gap-15">
+        <div class="flex-1 flex justify-center items-center">
+          <div class="relative">
+            <img src="/assets/moi.jpg" class="rounded-xl max-w-80" />
+            <img
+              src="/assets/logo-1.png"
+              class="absolute bottom-10 -right-10 max-w-24 rotate-20"
+            />
+          </div>
+        </div>
+        <div class="flex-1 flex flex-col gap-3 justify-center">
+          <p>Benoît, 50 ans, plus de 35 ans d’expérience dans le bâtiment.</p>
+          <p>
+            Passionné par la construction bien faite et le respect des clients,
+            j’ai décidé de mettre mon savoir-faire au service des clients.
+          </p>
+          <p>
+            Issu du compagnonnage en menuiserie et construction, j’ai évolué
+            d’apprentis à chef d’entreprises en passant par responsable des
+            poses, conducteur de travaux, chargé d’affaires et constructeur de
+            maisons, agrandissements, piscines, agencements extérieur … et
+            aujourd’hui conseiller en travaux.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="p-10 pt-20 bg-dark-blue color-white md:p-20" id="services">
+      <h2 class="poppins-medium">Les spécialités de compagnon travaux</h2>
+      <hr class="w-24 h-[4px] bg-orange border-none mt-3" />
+    </section>
+
+    <section class="m-10 mt-20 md:m-20">
+      <h2 class="poppins-medium">Témoignages</h2>
+      <hr class="w-24 h-[4px] bg-orange border-none mt-3" />
+    </section>
+
+    <section class="p-10 pt-20 bg-dark-blue color-white md:p-20" id="tarif">
+      <h2 class="poppins-medium">Tarifs</h2>
+      <hr class="w-24 h-[4px] bg-orange border-none mt-3" />
+    </section>
+
+    <section class="m-10 mt-20 md:m-20" id="contact">
+      <h2 class="poppins-medium">Contact</h2>
+      <hr class="w-24 h-[4px] bg-orange border-none mt-3" />
+    </section>
 
     <script src="/script.js"></script>
   </body>
