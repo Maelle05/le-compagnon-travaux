@@ -95,7 +95,8 @@ html {
 }
 
 /* SLIDER */
-.embla {
+.embla,
+.embla2 {
   position: relative;
   overflow: hidden;
 }
@@ -105,9 +106,21 @@ html {
   height: 80vh;
 }
 
+.embla2__container {
+  display: flex;
+  gap: 10px;
+  height: 20vh;
+}
+
 .embla__slide {
   position: relative;
   flex: 0 0 100%;
+  height: 100%;
+  min-width: 0;
+}
+
+.embla2__slide {
+  background-color: #f9a40d;
   height: 100%;
   min-width: 0;
 }
