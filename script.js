@@ -1,10 +1,8 @@
 const emblaNode = document.querySelector(".embla");
-const embla2Node = document.querySelector(".embla2");
 const dotsNode = document.querySelector(".embla__dots");
 const options = { loop: true };
 const plugins = [EmblaCarouselAutoplay()];
 const emblaApi = EmblaCarousel(emblaNode, options, plugins);
-const embla2Api = EmblaCarousel(embla2Node, options);
 
 // console.log(emblaApi.slideNodes()); // Access API
 
@@ -31,7 +29,13 @@ emblaApi.on("select", setSelectedDot);
 setSelectedDot();
 
 // Slider 2 button
-const prevBtnNode = embla2Node.querySelector(".embla2__button--prev");
-const nextBtnNode = embla2Node.querySelector(".embla2__button--next");
+const embla2Node = document.querySelector(".embla2__viewport");
+const embla2Button = document.querySelector(".embla2__buttons");
+const options2 = { loop: true, align: "start" };
+const plugins2 = [];
+const embla2Api = EmblaCarousel(embla2Node, options2, plugins2);
+
+const prevBtnNode = embla2Button.querySelector(".embla2__button--prev");
+const nextBtnNode = embla2Button.querySelector(".embla2__button--next");
 prevBtnNode.addEventListener("click", () => embla2Api.scrollPrev());
 nextBtnNode.addEventListener("click", () => embla2Api.scrollNext());

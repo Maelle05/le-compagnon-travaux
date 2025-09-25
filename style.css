@@ -108,8 +108,6 @@ html {
 
 .embla2__container {
   display: flex;
-  gap: 10px;
-  height: 20vh;
 }
 
 .embla__slide {
@@ -120,9 +118,10 @@ html {
 }
 
 .embla2__slide {
-  background-color: #f9a40d;
-  height: 100%;
+  background-color: #ffffff;
+  border: #f9a40d 7px solid;
   min-width: 0;
+  color: #01334d;
 }
 
 .embla__slide > img {
@@ -175,7 +174,7 @@ h2 {
   max-width: max-content;
   text-transform: uppercase;
   margin-top: 20px;
-  transition: color 1s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .button:hover {
