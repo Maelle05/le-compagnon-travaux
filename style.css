@@ -181,12 +181,17 @@ h2 {
   background-color: #a46b08;
 }
 
+.contactbtn:hover > span {
+  background-color: #a46b08;
+}
+
 .contactbtn > span {
   background-color: #f9a40d;
   padding: 4px 20px 4px 12px;
   border: #01334d 3px solid;
   border-radius: 10px;
   position: relative;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .contactbtn > span::after {
