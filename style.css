@@ -96,7 +96,8 @@ html {
 
 /* SLIDER */
 .embla,
-.embla2 {
+.embla2,
+.embla3 {
   position: relative;
   overflow: hidden;
 }
@@ -106,7 +107,8 @@ html {
   height: 80vh;
 }
 
-.embla2__container {
+.embla2__container,
+.embla3__container {
   display: flex;
 }
 
