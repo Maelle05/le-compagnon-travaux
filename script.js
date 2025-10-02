@@ -35,10 +35,22 @@ const options2 = { loop: true, align: "start" };
 const plugins2 = [];
 const embla2Api = EmblaCarousel(embla2Node, options2, plugins2);
 
-const prevBtnNode = embla2Button.querySelector(".embla2__button--prev");
-const nextBtnNode = embla2Button.querySelector(".embla2__button--next");
-prevBtnNode.addEventListener("click", () => embla2Api.scrollPrev());
-nextBtnNode.addEventListener("click", () => embla2Api.scrollNext());
+const prevBtnNode2 = embla2Button.querySelector(".embla2__button--prev");
+const nextBtnNode2 = embla2Button.querySelector(".embla2__button--next");
+prevBtnNode2.addEventListener("click", () => embla2Api.scrollPrev());
+nextBtnNode2.addEventListener("click", () => embla2Api.scrollNext());
+
+// Slider 4 button
+const embla4Node = document.querySelector(".embla4__viewport");
+const embla4Button = document.querySelector(".embla4__buttons");
+const options4 = { loop: true, align: "start" };
+const plugins4 = [];
+const embla4Api = EmblaCarousel(embla4Node, options4, plugins4);
+
+const prevBtnNode4 = embla4Button.querySelector(".embla4__button--prev");
+const nextBtnNode4 = embla4Button.querySelector(".embla4__button--next");
+prevBtnNode4.addEventListener("click", () => embla4Api.scrollPrev());
+nextBtnNode4.addEventListener("click", () => embla4Api.scrollNext());
 
 // Avis
 function truncateText(text, maxLength) {

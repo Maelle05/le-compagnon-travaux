@@ -58,6 +58,10 @@
   background-color: #01334d;
 }
 
+.bg-dark-blue-2 {
+  background-color: #013a58;
+}
+
 .color-dark-blue {
   color: #01334d;
 }
@@ -97,7 +101,8 @@ html {
 /* SLIDER */
 .embla,
 .embla2,
-.embla3 {
+.embla3,
+.embla4 {
   position: relative;
   overflow: hidden;
 }
@@ -122,6 +127,12 @@ html {
 .embla2__slide {
   background-color: #ffffff;
   border: #f9a40d 7px solid;
+  min-width: 0;
+  color: #01334d;
+}
+
+.embla4__slide {
+  background-color: #ffffff;
   min-width: 0;
   color: #01334d;
 }
