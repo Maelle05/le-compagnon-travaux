@@ -263,7 +263,8 @@ function initReviews() {
           "md:flex-[0_0_40%]",
           "hover:bg-[rgba(0,0,0,.05)]",
           "transition-all",
-          "duration-300"
+          "duration-300",
+          "max-h-max"
         );
         div.style.borderColor = "rgba(0,0,0,.20)";
         // div.href = review.googleMapsURI;
@@ -300,7 +301,7 @@ function initReviews() {
                     ${stars}
                   </div>
                   ${avisImg}
-                  <p class="my-5" >${review.avis}</p>
+                  <p class="mt-5" >${review.avis}</p>
               `;
 
         reviewsContainer.appendChild(div);
