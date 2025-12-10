@@ -991,16 +991,43 @@
     </section>
     <!-- Footer -->
     <div
-      class="bg-dark-blue p-6 py-8 w-full flex flex-row justify-between items-center color-white"
+      class="bg-dark-blue p-6 py-8 w-full color-white flex flex-col items-center"
     >
-      <a href="#"><img src="/assets/logo-1.png" class="h-10" /></a>
-      <a
-        href="/cgu.html"
-        target="_blank"
-        class="relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
-        >Mentions légales</a
+      <div class="flex flex-col md:flex-row justify-between items-end w-full">
+        <div class="flex flex-col gap-1 w-full items-center md:items-start">
+          <a href="#"><img src="/assets/logo-1.png" class="h-10" /></a>
+          <a
+            href="/cgu.html"
+            target="_blank"
+            class="relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+            >Mentions légales</a
+          >
+        </div>
+        <div
+          class="flex flex-col items-center mt-3 md:mt-0 md:items-end gap-1 w-full"
+        >
+          <a
+            class="underline underline-offset-4 hover:text-[#f9a40d] transition-all duration-300"
+            target="_blank"
+            href="https://maellerabouan.com/"
+          >
+            Merci Maëlle !</a
+          >
+          <span class="text-center md:text-end text-sm"
+            >design & developpement & SEO du site web</span
+          >
+        </div>
+      </div>
+      <span class="text-center mt-5 text-sm"
+        >© <span id="year"></span> Le compagnon travaux — Tous droits
+        réservés</span
       >
     </div>
+
     <script src="/script.js"></script>
   </body>
 </html>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
